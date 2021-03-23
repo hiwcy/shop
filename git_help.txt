@@ -1,0 +1,41 @@
+1.git安装后需要指定邮箱和名字
+
+ git config --global user.name “youciw”
+ git config --global user.email "youciw@qq.com"
+
+2.创建一个空目录
+
+mkdir pro_git
+
+3.Git仓库的初始化
+
+cd pro_git
+git init 
+
+
+4.可以开始开发了！
+
+
+5.Git常用命令
+
+git status  //查看当前状态
+git add 文件名 //添加到缓存区
+	git add 文件名1
+	git add 文件名1 文件名2 文件名3
+	git add .  //添加当前目录
+git commit -m "注释内容"   //提交到版本库
+
+
+6. github 远程仓库操作：
+
+一，基于http协议使用方式
+
+1.在github创建仓库，名称是：shop
+2.在本地仓库目录：shop，并进入该目录
+3.使用 git clone https://线上仓库地址 //克隆远程仓库目录到本地。
+4.在仓库上做对应操作（提交缓存区，提交本地仓库（版本库），提交线上仓库，拉取线上仓库）
+
+
+
+
+
