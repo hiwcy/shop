@@ -25,6 +25,17 @@ git add 文件名 //添加到缓存区
 	git add .  //添加当前目录
 git commit -m "注释内容"   //提交到版本库
 
+6.分支操作
+git branch //查看分支
+git branch dev //创建dev分支
+git checkout dev  //切换到dev分支
+git merge dev   //dev分支被合并到 master
+git branch -d dev //删除分支前先退出要删除的分支
+
+
+
+
+
 
 6. github 远程仓库操作：
 
@@ -33,7 +44,28 @@ git commit -m "注释内容"   //提交到版本库
 1.在github创建仓库，名称是：shop
 2.在本地仓库目录：shop，并进入该目录
 3.使用 git clone https://线上仓库地址 //克隆远程仓库目录到本地。
-4.在仓库上做对应操作（提交缓存区，提交本地仓库（版本库），提交线上仓库，拉取线上仓库）
+4.在仓库上做对应操作（a.提交缓存区，b.提交本地仓库（版本库），c.提交线上仓库，d.拉取线上仓库）
+  a: git add filename1  //添加文件到缓存区
+  b: git commit -m "填写注释内容”  //提交到本地仓库的命令
+  c: git push  //提交到线上仓库的命令
+  d: git pull  //拉取同步线上仓库文件到本地仓库
+
+7.冲突与解决
+1.先gti pull 
+2.商量修改相关文件
+3.重新提交文件
+	git add
+	git commit -m
+4.重新把本地提交到线上
+	git push
+
+二，基于ssh协议
+
+1.生成客户端公私玥文件
+2.sshkeygen -t rsa -C "github注册邮箱"
+3.上传公玥文件内空到线上仓库（id_rsa.pub）
+4.执行后续git操作
+
 
 
 
